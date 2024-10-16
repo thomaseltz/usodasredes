@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: titulo;
+    src: url(./Energy\ Station.ttf);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    /* background-color: #4f87bb9d; */
+    background-color: #f0f0f0;
+    color: #333; 
+    
+}
+
+p{
+    padding: 30px;
+}
+
+
+main{
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+    background-color: #f0f0f0;
+    /* border-radius: 15px;  */
+    border: solid 2px #1a7cd89d;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1a7cd89d;
+    padding: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover{
+    color: #000000;
+}
+
+
+footer{
+    text-align: center;
+    color: #000000;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+    
+ }  
+ 
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+   
+    
+    
+}
+
+table,th, td{
+    border: 1px solid #1a7cd89d;
+    padding: 20px;
+    
+}
+
+#fontes{
+    text-align: center;
+    
+}
+
+#comentarios{
+    text-align: center;
+}
+
+textarea{
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #1a7cd89d;
+    /* border-radius: 15px; */
+    box-sizing: border-box;
+    /* width: calc(100% - 25px); */
+    width: 100%;
+}
+
+button{
+    margin: 30px;
+    background-color: #1a7cd89d;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #000000;
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+button:hover{
+    background-color: #000000;
+}
+
+#topicos{
+    text-align: center;
+    .xaxa{
+        font-family: "titulo";
+        font-size: 30px;
+        color: #1a7cd89d;
+        animation: mudacor 3s infinite;
+        
+    }   
+}
+
+.list{
+    text-align: left;
+    padding: 70px;
+}
+
+/* #uso{
+    background-color: #bebdbd81;
+    border-radius: 15px;
+} */
+
+.introducao{
+    background-color: #bebdbd81;
+    border-radius: 15px;
+}
+
+#conclusao{
+    background-color: #bebdbd81;
+    border-radius: 15px;
+    
+}
+
+
+@keyframes mudacor{
+    25%{
+        color: #1a7cd89d;
+    }
+    25%{
+        color: #333;
+    }
+}
+
+@media (max-width: 768px){
+    .main{
+        flex: 1 1 50%;
+        font-size: 24px;
+    
+    }
+
+    img{
+        width: 70%;
+        height: 30%;
+    }  
+}
+
+
+@media (max-width: 1024px){
+    .main{
+        flex: 1 1 50%;
+        font-size: 24px;
+        
+    }
+}
